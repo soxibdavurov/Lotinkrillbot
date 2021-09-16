@@ -1,7 +1,7 @@
 import telebot
 from transliterate import to_cyrillic, to_latin
 
-TOKEN = "1983"  # <-- Token uchun joy -->
+TOKEN = "1983076539:AAHOTchr6v7BrRYW7XQoBne4iT6m0sKVVFs"  # <-- Token uchun joy -->
 bot = telebot.TeleBot(token=TOKEN)
 
 
