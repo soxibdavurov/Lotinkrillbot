@@ -1229,10 +1229,9 @@ def to_cyrillic(text):
         'sh': 'ш', 'Sh': 'Ш', 'SH': 'Ш',
         # This line must come before 'yo' because of it's apostrophe
         'yo‘': 'йў', 'Yo‘': 'Йў', 'YO‘': 'ЙЎ',
+        'yo\'': 'йў', 'Yo\'': 'Йў', 'YO\'': 'ЙЎ',
     }
     compounds_second = {
-        'yo"': 'йў', 'Yo"': 'Йў', 'YO"': 'ЙЎ',
-        'yo\'': 'йў', 'Yo\'': 'Йў', 'YO\'': 'ЙЎ',
         'yo': 'ё', 'Yo': 'Ё', 'YO': 'Ё',
         # 'ts': 'ц', 'Ts': 'Ц', 'TS': 'Ц',  # No need for this, see TS_WORDS
         'yu': 'ю', 'Yu': 'Ю', 'YU': 'Ю',
@@ -1241,8 +1240,8 @@ def to_cyrillic(text):
         # different kinds of apostrophes
         'o‘': 'ў', 'O‘': 'Ў', 'oʻ': 'ў', 'Oʻ': 'Ў',
         'g‘': 'ғ', 'G‘': 'Ғ', 'gʻ': 'ғ', 'Gʻ': 'Ғ',
-        'o\'': 'ў', 'O\'': 'Ў', 'o"': 'ў', 'O"': 'Ў',
-        'g\'': 'ғ', 'G\'': 'Ғ', 'g"': 'ғ', 'G"': 'Ғ',
+        'o\'': 'ў', 'O\'': 'Ў',
+        'g\'': 'ғ', 'G\'': 'Ғ',
     }
     beginning_rules = {
         'ye': 'е', 'Ye': 'Е', 'YE': 'Е',
