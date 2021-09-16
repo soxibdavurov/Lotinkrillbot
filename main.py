@@ -1,7 +1,7 @@
 import telebot
 from transliterate import to_cyrillic, to_latin
 
-TOKEN = "vx:vcc"  # <-- Tokeningizni shu yerga yozing
+TOKEN = "1983076539:AAHOTchr6v7BrRYW7XQoBne4iT6m0sKVVFs"  # <-- Tokeningizni shu yerga yozing
 bot = telebot.TeleBot(token=TOKEN)
 
 
@@ -9,10 +9,10 @@ bot = telebot.TeleBot(token=TOKEN)
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     username = message.from_user.username  # Bu usul bilan foydalanuvchi nomini olishimiz mumkin
-    xabar = f"""Assalomu alaykum {username},  men sizga so'z va matnlarni Lotindan Krillga va Krilldan Lotinga o'girishga yordam beraman.  \n
-Ассалому алайкум, мен сизга сўз ва матнларни Лотиндан Криллга ва Криллдан Лотинга ўгиришга ёрдам бераман. \n
-(Kichik shart: lotin va krillda aralash yozilgan so'zlarni faqat lotinga o'giraman)"""
-    xabar += '\nMatningizni yuboring.'
+    xabar = f"""Assalomu alaykum {username},  men sizga so'z va matnlarni Lotinchadan Krillchaga va Krillchadan Lotinchaga o'girishga yordam beraman.  \n
+Ассалому алайкум, мен сизга сўз ва матнларни Лотинчадан Криллчага ва Криллчадан Лотинчага ўгиришга ёрдам бераман. \n
+(Kichik shart: lotin va krillda aralash yozilgan so'zlarni faqat lotinga o'giraman) \n"""
+    xabar += '\nMatningizni yuboring:👇'
     chatid = message.chat.id
     bot.send_message(chatid, xabar)
 
