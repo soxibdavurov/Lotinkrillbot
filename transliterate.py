@@ -1231,6 +1231,7 @@ def to_cyrillic(text):
         'yo‘': 'йў', 'Yo‘': 'Йў', 'YO‘': 'ЙЎ',
     }
     compounds_second = {
+        'yo"': 'йў', 'Yo"': 'Йў', 'YO"': 'ЙЎ',
         'yo\'': 'йў', 'Yo\'': 'Йў', 'YO\'': 'ЙЎ',
         'yo': 'ё', 'Yo': 'Ё', 'YO': 'Ё',
         # 'ts': 'ц', 'Ts': 'Ц', 'TS': 'Ц',  # No need for this, see TS_WORDS
